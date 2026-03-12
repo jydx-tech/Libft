@@ -8,4 +8,7 @@
 /*str manip*/
 int ft_strlen(char *str);
 
+/* memory */
+void *ft_memset (void *s, int c, size_t n);
+
 # endif

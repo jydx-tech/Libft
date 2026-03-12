@@ -1,6 +1,6 @@
 /*Header*/
 
-#include <stdio.h>
+#include <libft.h>
 
 int ft_strlen(char *str)
 {
@@ -11,6 +11,8 @@ int ft_strlen(char *str)
         i++;
     return (i);
 }
+/*
+#include <stdio.h>
 
 int main(void)
 {
@@ -18,4 +20,4 @@ int main(void)
 
     printf("Longueur super array : %d\n", ft_strlen(test));
     return (0);
-}
+}*/
