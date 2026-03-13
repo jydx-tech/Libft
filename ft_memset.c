@@ -17,8 +17,6 @@ void *ft_memset (void *s, int c, size_t n)
     return (res);
 }
 /*
-#include <stdio.h>
-
 int main()
  {
     char str[20] = "Hello 42 ca va ?";
