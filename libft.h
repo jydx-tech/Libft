@@ -15,7 +15,7 @@ int ft_isascii(int c);
 int ft_isprint(int c);
 
 /*strings*/
-int ft_strlen(char *str);
+size_t  ft_strlen(char *str);
 
 /* memory */
 void    ft_bzero(void *s, size_t n);

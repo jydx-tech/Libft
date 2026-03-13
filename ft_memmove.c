@@ -2,6 +2,8 @@
 
 #include "libft.h"
 
+void    *ft_memcpy(void *dest, const void *src, size_t n);
+
 void    *ft_memmove(void *dest, const void *src, size_t n)
 {
     unsigned char *res;
@@ -23,7 +25,7 @@ void    *ft_memmove(void *dest, const void *src, size_t n)
         ft_memcpy(res, source, n);
     return (res);
 }
-
+/*
 int main()
  {
     char dest[20] = "Hello 42 ca va ?";
@@ -33,4 +35,4 @@ int main()
     ft_memmove(dest, src, 8);
     printf("After : %s\n", dest);
     return 0;
-}
+}*/
