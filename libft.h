@@ -17,6 +17,7 @@ int ft_isprint(int c);
 /*strings*/
 size_t  ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 /* memory */
 void	ft_bzero(void *s, size_t n);
