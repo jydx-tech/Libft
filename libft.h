@@ -21,6 +21,7 @@ size_t  ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char *ft_strchr(const char *s, int c);
+int ft_strncmp( const char * s1, const char * s2, size_t n);
 
 /* memory */
 void	ft_bzero(void *s, size_t n);
