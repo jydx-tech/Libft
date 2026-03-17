@@ -32,3 +32,7 @@ int main(int argc, char **argv)
     }
     return (0);
 }*/
+/*Elle parcourt une chaîne de caractères à la recherche de la première occurrence d'un caractère spécifique.
+L'argument c est un int, mais la fonction doit comparer s[i] avec (char)c. C'est important pour la précision des types.
+on reçoit une chaîne const char * mais qu'on doit renvoyer un char * (non constant), on doit "forcer" le type (faire un cast) lors du return
+Si on cherche le caractère nul (\0), la fonction doit renvoyer un pointeur sur le \0 */

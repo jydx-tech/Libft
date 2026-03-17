@@ -34,3 +34,6 @@ int main()
     printf("After : %s\n", dest);
     return 0;
 }*/
+/* fait comme memcpy mais gere le chevauchement,
+ex abc et cde pour pas effacer c on commence par la fin
+et meme raison caster en unsigned char pour travailler octet par octet*/

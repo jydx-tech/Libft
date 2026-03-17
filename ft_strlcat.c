@@ -38,3 +38,5 @@ int main(int argc, char **argv)
     }
     return (0);
 }*/
+/*Elle ajoute la chaîne src à la fin de dst, mais avec une limite stricte de taille dstsize.
+Elle renvoie la longueur totale de la chaîne qu'elle a essayé de créer.*/

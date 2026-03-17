@@ -32,3 +32,5 @@ int main()
     printf("len copy: %zu\n", res);
     return 0;
 }*/
+/*copie du nbre de size de src ds dst
+retourne la taille de la src*/

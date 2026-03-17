@@ -31,3 +31,8 @@ int main()
     printf("After : %s\n", dest);
     return 0;
 }*/
+/*Elle copie n octets depuis une zone mémoire src (source) vers une zone mémoire dst (destination).
+Contrairement à strcpy qui s'arrête dès qu'elle voit un \0, memcpy s'en fiche : elle copie aveuglément la quantité exacte d'octets demandé
+Comme les paramètres sont de type void *, on ne peut pas les manipuler directement 
+(le compilateur ne sait pas quelle est la taille d'un void). 
+Pour copier octet par octet, on doit les "caster" en unsigned char *.*/

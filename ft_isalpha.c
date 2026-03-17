@@ -19,3 +19,4 @@ int main(int argc, char **argv)
     }
     return (0);
 }*/
+/*retourne 1 si c est une lettre*/

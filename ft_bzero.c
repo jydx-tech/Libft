@@ -17,3 +17,4 @@ int main()
     printf("After : %s\n", &str[5]);
     return 0;
 }*/
+/*uttilise memset pour metre des 0 tout les octets d'une zone memoire*/

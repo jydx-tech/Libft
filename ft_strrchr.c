@@ -33,3 +33,4 @@ int main(int argc, char **argv)
     }
     return (0);
 }*/
+/*pareil que strchr mais renvoi l'adresse de la derniere occurence*/

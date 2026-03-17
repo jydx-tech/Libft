@@ -28,3 +28,6 @@ int main(int argc, char **argv)
     }
     return (0);
 }*/
+/*compare caractere par caractere 2 string, 
+renvoi la valeur ascii de la difference si les caractere ne sont pas identique
+retourne 0 si identique*/

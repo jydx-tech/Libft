@@ -36,3 +36,6 @@ int main(int argc, char **argv)
     }
     return (0);
 }*/
+/*recherche la premiere occurance d'un octet dans une memoire de taille defini par n
+on utilise unsigned char ds le cas ou ds la memoire il y a un -, pour ne pas interpreter comme un négatif 
+et surtout char pour travailler octet par octet*/

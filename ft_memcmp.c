@@ -32,3 +32,8 @@ int main(int argc, char **argv)
     }
     return (0);
 }*/
+/*Elle compare deux blocs de mémoire (s1 et s2) sur une longueur de n octets.
+Elle s'arrête dès qu'elle trouve un octet différent ou qu'elle a fini de lire les n octets.
+Comme les paramètres sont de type void *, on ne peut pas les manipuler directement 
+(le compilateur ne sait pas quelle est la taille d'un void). 
+Pour comparer octet par octet, on doit les "caster" en unsigned char *.*/

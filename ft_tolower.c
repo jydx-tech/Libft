@@ -8,7 +8,7 @@ int ft_tolower(int c)
         return (c + 32);
     return (c);
 }
-
+/*
 #include <stdlib.h>
 
 int main(int argc, char **argv)
@@ -20,4 +20,5 @@ int main(int argc, char **argv)
         printf("lower = %c \n", res);
     }
     return (0);
-}
+}*/
+/*si majusule devient minuscule*/

@@ -9,7 +9,7 @@ void *ft_memset (void *s, int c, size_t n)
 
     i = 0;
     res = (unsigned char *)s;
-    while(i < n)
+    while (i < n)
     {
         res[i] = c;
         i++;
@@ -26,3 +26,7 @@ int main()
     printf("After : %s\n", str);
     return 0;
 }*/
+/*Elle remplit les n premiers octets de la zone mémoire pointée par s avec l'octet c.
+s est un void * car memset doit pouvoir fonctionner sur n'importe quoi (un tableau de int, une struct, une chaîne de caractères, etc.).
+on ne peut pas faire d'arithmétique ou d'assignation sur un void *. 
+On doit donc créer un pointeur de travail en unsigned char * pour avancer octet par octet (1 octet = 8 bits, la plus petite unité manipulable).*/
