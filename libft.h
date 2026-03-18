@@ -25,6 +25,7 @@ char *ft_strchr(const char *s, int c);
 int ft_strncmp( const char * s1, const char * s2, size_t n);
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 char	*ft_strdup(const char *s);
+char    *ft_substr(char const *s, unsigned int start, size_t len);
 
 /* memory */
 void	ft_bzero(void *s, size_t n);
