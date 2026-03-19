@@ -26,7 +26,7 @@ static char alt_maj(unsigned int i, char c)
 {
     if (c >= 'A' && c <= 'Z')
         c = c + 32;
-    if (i % 2 == 0 && (c >= 'a' && c<= 'z'))
+    if (i % 2 == 0 && (c >= 'a' && c <= 'z'))
         c = c - 32;
     return (c);
 }
