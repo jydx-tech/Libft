@@ -2,7 +2,7 @@
 
 #include "libft.h"
 
-static int len_nb(int n)
+static int len_nb(long int n)
 {
     int len;
 
@@ -24,28 +24,30 @@ char *ft_itoa(int n)
 {
     char *res;
     int len;
+    long int nb;
 
-    len = len_nb(n);
+    nb = n;
+    len = len_nb(nb);
     res = malloc(sizeof(char) * (len + 1));
     if (!res)
         return (NULL);
-    if (n < 0)
+    if (nb < 0)
     {
         res[0] = '-';
-        n = -n;
+        nb = -nb;
     }
     if (n == 0)
         res[0] = '0';
     res[len] = '\0';
-    while (n > 0)
+    while (nb > 0)
     {
-        res[len - 1] = (n % 10) + '0';
+        res[len - 1] = (nb % 10) + '0';
         len--;
-        n = n / 10;
+        nb = nb / 10;
     }
     return (res);
 }
-
+/*
 int main(int argc, char **argv)
 {
     char *test;
@@ -57,4 +59,10 @@ int main(int argc, char **argv)
         free (test);
     }
     return (0);
-}
+}*/
+/*transforme un nombre en int en une string
+trouver sa taille en / par 10
+allouer la memoire
+si - position de la string est '-'
+remplir par la fin de la string
+gerer le tout en long int pour gerer le int min*/

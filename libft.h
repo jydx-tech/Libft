@@ -41,5 +41,6 @@ void *ft_calloc( size_t elementcount, size_t elementsize);
 
 /*convertion*/
 int	ft_atoi(const char *str);
+char *ft_itoa(int n);
 
 #endif
