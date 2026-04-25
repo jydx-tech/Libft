@@ -2,16 +2,17 @@
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+void ft_lstadd_back(t_list **lst, t_list *new)
 {
-    int count;
-    count = 0;
-    while (lst)
+    if (!lst || !new)
+        return;
+    if (!*lst)
     {
-        count += 1;
-        lst = lst -> next;
+        *lst = new;
+        return;
     }
-    return (count);
+    t_list *last = ft_lstlast(*lst);
+    last -> next = new;
 }
 /*
 int main(int argc, char **argv)
@@ -25,10 +26,9 @@ int main(int argc, char **argv)
             t_list *node = ft_lstnew(argv[i]);
             if(!node)
                 return (1);
-            ft_lstadd_front(&list, node);
+            ft_lstadd_back(&list, node);
             i++;
         }
-        printf("nb of node: %d\n", ft_lstsize(list));
         t_list *temp;
         while (list)
         {
@@ -40,4 +40,5 @@ int main(int argc, char **argv)
     }
     return (0);
 }*/
-/*parcour la list en incrementant un compteur*/
+/*avec if !*lst check si la liste est vide et si oui insert new
+ensuite on va chercher le dernier noeud, on lui indique que son next est l'adresse de new celui de new est automatiquement créé à la creation du noeud*/
