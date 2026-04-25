@@ -2,18 +2,15 @@
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+t_list *ft_lstlast(t_list *lst)
 {
     if (!lst)
         return (NULL);
-    int count;
-    count = 0;
-    while (lst)
+    while (lst -> next)
     {
-        count += 1;
         lst = lst -> next;
     }
-    return (count);
+    return (lst);
 }
 /*
 int main(int argc, char **argv)
@@ -30,7 +27,8 @@ int main(int argc, char **argv)
             ft_lstadd_front(&list, node);
             i++;
         }
-        printf("nb of node: %d\n", ft_lstsize(list));
+        t_list *last = ft_lstlast(list);
+        printf("last node: %s\n", (char *)last -> content);
         t_list *temp;
         while (list)
         {
@@ -42,4 +40,4 @@ int main(int argc, char **argv)
     }
     return (0);
 }*/
-/*parcour la list en incrementant un compteur*/
+/*parcour la list tant que next ne point pas sur NULL*/
