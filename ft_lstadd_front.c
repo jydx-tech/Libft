@@ -9,8 +9,7 @@ void ft_lstadd_front(t_list **lst, t_list *new)
     new -> next = *lst;
     *lst = new;
 }
-
-
+/*
 int main(int argc, char **argv)
 {
     if (argc >= 2)
@@ -25,12 +24,16 @@ int main(int argc, char **argv)
             ft_lstadd_front(&list, node);
             i++;
         }
+        t_list *temp;
         while (list)
         {
             printf("%s", (char *)list -> content);
-            list = list -> next;
+            temp = list -> next;
             free (list);
+            list = temp;
         }
     }
     return (0);
-}
+}*/
+/*ajout au debut de la liste un nouveau noeud
+il faut donner a next l'adresse dde l'ancien noeud*/
